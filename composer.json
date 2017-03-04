@@ -1,9 +1,13 @@
 {
     "name": "reyzeer/quick-create-yii2-project",
-    "description": "Quick create yii2 project in linux system.",
-    "type": "script",
+    "description": "Script for quick create yii2 project in system linux. Create advanced yii2",
+    "type": "project",
     "license": "MIT",
-    "scripts": {
-
-    }
+    "authors": [
+        {
+            "name": "reyzeer",
+            "email": "czarneckizbigniew0@gmail.com"
+        }
+    ],
+    "require": {}
 }
