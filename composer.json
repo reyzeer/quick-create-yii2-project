@@ -1,0 +1,9 @@
+{
+    "name": "reyzeer/quick-create-yii2-project",
+    "description": "Quick create yii2 project in linux system.",
+    "type": "script",
+    "license": "MIT",
+    "scripts": {
+
+    }
+}
