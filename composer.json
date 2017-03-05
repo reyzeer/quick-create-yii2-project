@@ -9,5 +9,6 @@
             "email": "czarneckizbigniew0@gmail.com"
         }
     ],
+    "minimum-stability": "dev"
     "require": {}
 }
