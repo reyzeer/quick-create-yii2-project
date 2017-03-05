@@ -10,5 +10,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "bin":["quick-create-yii2-project"]
 }
