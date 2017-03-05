@@ -149,7 +149,7 @@ function clone_repository()
 # $1 - string - domain
 function add2hosts
 {
-	sudo echo "127.0.0.1 ${1} www.${1}" >> /etc/hosts
+	sudo sh -c "echo \"127.0.0.1 ${1} www.${1}\" >> /etc/hosts"
 }
 
 # Adds domain to apache2 sites
@@ -202,8 +202,8 @@ function add2apache
 
 EOM
 
-	sudo echo "${vhosts}" >> ${APACHE2_SITES_PATH}/${1}.conf
-	sudo a2ensite ${1}
+	sudo sh -c "echo \"${vhosts}\" >> ${APACHE2_SITES_PATH}/${1}.conf"
+	sudo sh -c "a2ensite ${1}"
 
 }
 
@@ -275,7 +275,10 @@ function create_project()
 
   clone_repository
   create_project_yii2
+
+  cd ./$REPO_DIR
   push_init_project
+  cd ..
 
   mkdir apache_logs dumps auths
 
