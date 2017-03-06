@@ -216,6 +216,7 @@ function create_project_yii2()
   #install yii2 (create-project and clone files to repository dir)
   composer create-project yiisoft/yii2-app-advanced advanced $YII2_VERSION
   mv ./advanced/* ./$REPO_DIR/
+  mv ./advanced/.* ./$REPO_DIR/
   rm -rf advanced
 
   cd ./$REPO_DIR
